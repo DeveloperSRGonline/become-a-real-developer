@@ -1,0 +1,67 @@
+- queryselector hamesha pahela element select karta hai 
+- console.dir - ye open hone wala formet dikhta hai 
+- queryselectorAll - ye array jaisa structure deta hai array nahi deta 
+// dom = body
+// dom manupulation 
+
+// html se element select karna 
+// text badalna 
+// html badalna
+// css badalna 
+// attribute badalna
+// event listners 
+
+
+
+// selecting an element 
+
+// document.querySelector
+// document.getElementById - id se select
+// document.getElementsByClassName - class se select
+
+// let abcd = document.getElementById('abcd')
+// tum ne abcd id wale element ko select karliya hai and abcd  variable  mein save kar liya hai 
+// console.dir(abcd);
+// yaha humne h1 node ko nikala hai 
+
+// document.getElementById('efg')  jab class hai tab tum getelementbyid nahi kar sakte  
+// tab aap ko get elements by className karna padega 
+
+// let efg = document.getElementsByClassName('efg')
+// console.log(efg);
+
+
+
+// let abcd = document.querySelector('h1') 
+// par agar html mein ek se jyada h1 element hai toh ye pahela wala select karta hai 
+// console.dir(abcd)
+// let allabcd = document.querySelectorAll('h1')
+// ye aap ko array jaise nodelist ka structure deta hai 
+
+h1.textContent = "shivam kaise ho" -> h1 ek object hai and uske andar key hai textContent naam ki uski value badal rahe hai hum 
+
+//agar tumhe kisi element ko manupulate kara hai toh us element ki vo property pakadiye and uski value vo rakhiye jo aap ko rakhni hai - ho gaya manupulation 
+- innertext - text badalta hai  
+- innerhtml - html badalta hai - matlab kisi element ki html change karna ho to hum ye badal te hai 
+
+attribute - manupulation
+- ab ye attribute kya hota hai - html mein tab ke baad mein jo likha hota hai vo attribute hota hai 
+eg.  <a href=""></a> - ismein jo href hai vo attribute hai 
+
+jab attribute - me manupulation karna ho toh tab action mein aata hai - getattribute and setattribute   
+setattribute - mein do chije aati hai paheli konsa attribute set karna hai and dusra us attribute ki value kya rakhni hai 
+
+append - script ke baad aayega 
+prepend - script ke pahele aayega 
+
+steps
+- create element 
+- append/prepend karo jaha bhi element chahiye vaha 
+
+-- jab bhi method bole tab () - ye wale brackets laga do 
+
+- toggle - kya karta hai - kuch chij lagi hai toh hata dega and kuchh hati hai toh laga dega 
+let h1 = document.querySelector('h1')
+console.dir(h1);
+
+h1.classList.toggle('head')
